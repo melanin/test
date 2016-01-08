@@ -6,9 +6,9 @@ var Todo = mongoose.model('Todo', {
     done: Boolean
 });
 
-var io = require('socket.io').listen(1337);
+var io = require('socket.io').listen(80);
 
-console.log('Server running at localhost:1337');
+console.log('Server running at localhost:80');
 
 io.sockets.on('connection', function(socket) {
     
